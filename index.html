@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Hearing recognition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+       <link rel="stylesheet" href="style.css">
+      
+      </head>
+
+      <body>
+          <div class="container">
+              <center>
+                  <br><br>
+                  <h1  style="font-family: Georgia, 'Times New Roman', Times, serif;">Reading App </h1>
+                  <img id="hear" src="hearing.png">
+                  <hr>
+                  <br><br>
+                  <h4 id="instructions"> This app is for people who can't hear. Whatever you say will convert to text.</h4>
+              <div class="form-group">
+                  <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 600;"> Say what you want to turn into text: </h3>
+                  <textarea class="form-control" id="textarea" readonly="true"></textarea>
+              </div>
+              <br>
+              <button class="btn btn-primary" onclick = "recordButton()"> Record Now! </button>
+                </center>
+          </div>
+      </body>
+      <script src="main.js"></script>
+</html>
